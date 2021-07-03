@@ -97,21 +97,81 @@
       }
 
       .left {
-        border: 1px solid black; 
+        /*border: 1px solid black; */
         width: 225px;
         margin-top: 35px;
       }
 
       .center {
-        border: 1px solid black; 
+        /*border: 1px solid black; */
         flex-grow: 1;
         margin-top: 35px;
       }
 
       .right {
-        border: 1px solid black; 
+        /*border: 1px solid black; */ 
         width: 300px;
         margin-top: 35px;
+      }
+
+      /* Create Post */
+
+      .create-posts {
+        background-color: white;
+        height: 120px;
+        width: 540px;
+        border: 1px solid #6e6e6e42;
+        border-radius: 5px;
+      }
+
+      .post-image {
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+
+      .create-post-top {
+        display: flex;
+      }
+
+      .post-input {
+        height: 40px;
+        flex: 1;
+        border-radius: 25px;
+        border: 1px solid #aaa;
+        margin: 14px;
+        text-indent: 15px;
+      }
+      .create-post-bottom {
+        display: flex;
+        justify-content: space-around;
+      }
+      .post-button {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        color: #00000099;
+      }
+
+      .mr-10 {
+        margin-right: 10px;
+      }
+
+      .blue-button {
+        color: #70b5f9;
+      }
+      .green-button {
+        color: #7fc15e;
+      }
+      .orange-button {
+        color: #e7a33e;
+      }
+      .pink-button {
+        color: #f89295;
       }
     </style>
 
@@ -165,7 +225,35 @@
     <!-- Structuring the Main Page -->
     <div class="main">
       <div class="left">left</div>
-      <div class="center"></div>
+      <div class="center">
+        <!-- Create Post -->
+        <div class="create-posts">
+          <div class="create-post-top">
+            <img class="post-image" src="./user.jpeg" />
+            <input placeholder="Start a Post" class="post-input" type="text" />
+          </div>
+          <div class="create-post-bottom">
+            <button class="post-button">
+              <span class="material-icons blue-button mr-10"> image </span>
+              Photo
+            </button>
+            <button class="post-button">
+              <span class="material-icons green-button mr-10">
+                play_circle_filled
+              </span>
+              Video
+            </button>
+            <button class="post-button">
+              <span class="material-icons orange-button mr-10"> event </span>
+              Event
+            </button>
+            <button class="post-button">
+              <span class="material-icons pink-button mr-10"> article </span>
+              Write Article
+            </button>
+          </div>
+        </div>
+      </div>
       <div class="right">right</div>
     </div>
 
