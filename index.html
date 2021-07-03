@@ -93,13 +93,14 @@
         display: flex;
         margin: 0 auto;
         margin-top: 70px;
-        max-width: 60%;
+        max-width: 80%;
       }
 
       .left {
         /*border: 1px solid black; */
         width: 225px;
         margin-top: 35px;
+        margin-right:15px;
       }
 
       .center {
@@ -112,6 +113,7 @@
         /*border: 1px solid black; */ 
         width: 300px;
         margin-top: 35px;
+        margin-left:15px;
       }
 
       /* Create Post */
@@ -190,6 +192,7 @@
         border-radius: 10px;
         display: flex;
         flex-direction: column;
+        width: 540px;
       }
       .post-info {
         display: flex;
@@ -289,6 +292,37 @@
 
       details > summary::marker {
         display: none;
+      }
+
+      .linkedin-news{
+        background-color: white;
+        border: 1px solid #6e6e6e;
+        border-color: #6e6e6e42;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        padding:10px;
+        margin-bottom:5px;
+      }
+
+      .right-heading{
+        font-size:18px;
+        font-weight:bold;
+        padding:5px;
+      }
+
+      .news-list{
+        margin:0px;
+      }
+      .news-list li{
+        margin:0px;
+        padding:3px;
+      }
+
+      .show-more{
+        font-size:14px;
+        padding:5px 10px;
+        color:#00000099;
       }
 
     </style>
@@ -423,7 +457,52 @@
             </div>
           </div>
       </div>
-      <div class="right">right</div>
+      <div class="right">
+        <div class="linkedin-news">
+          <div class="right-heading">LinkedIn News</div>
+          <ul class="news-list">
+            <li>
+                <div class="post-creator">When job interviews are endless</div>
+                <div class="faded-text">2h ago • 6,209 readers</div>
+            </li>
+            <li>
+                <div class="post-creator">Apple pushes back on Remote Work</div>
+                <div class="faded-text">14h ago • 203,209 readers</div>
+            </li>
+            <li>
+                <div class="post-creator">Latest Recruiting Perk : WFH</div>
+                <div class="faded-text">23h ago • 9,209 readers</div>
+            </li>
+            <li>
+                <div class="post-creator">Speaking Confidently and Effectively</div>
+                <div class="faded-text">1d ago • 63,209 readers</div>
+            </li>
+            <li>
+                <div class="post-creator">Apple pushes back on Remote Work</div>
+                <div class="faded-text">10d ago • 1,403,209 readers</div>
+            </li>
+          </ul>
+          <div class="show-more">Show more </div>
+        </div>
+        <div class="linkedin-news">
+          <div class="right-heading">Today's Top Courses</div>
+          <ol class="news-list">
+            <li>
+                <div class="post-creator">Unconsiousness Bias</div>
+                <div class="faded-text">Pete Mocktatis</div>
+            </li>
+            <li>
+                <div class="post-creator">DevOps Foundation</div>
+                <div class="faded-text">James Wickett, Ernest Muller</div>
+            </li>
+            <li>
+                <div class="post-creator">Speaking Confidently and Effectively</div>
+                <div class="faded-text">Stacey Gordon</div>
+            </li>
+          </ol>
+          <div class="show-more">Show more on LinkedIn Learning</div>
+        </div>
+      </div>
     </div>
 
   </body>
