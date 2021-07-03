@@ -294,7 +294,7 @@
         display: none;
       }
 
-      .linkedin-news{
+      .linkedin-box{
         background-color: white;
         border: 1px solid #6e6e6e;
         border-color: #6e6e6e42;
@@ -323,6 +323,50 @@
         font-size:14px;
         padding:5px 10px;
         color:#00000099;
+      }
+
+      .linkedin-right-box{
+        background-color: white;
+        border: 1px solid #6e6e6e;
+        border-color: #6e6e6e42;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom:5px;
+      }
+
+      .banner{
+        width:100%;
+        border-radius: 10px 10px 0 0;
+      }
+      .banner-profile-img{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        margin-top: 10px;
+        margin-left: 10px;
+        position:relative;
+        top:-40px;
+        left:32%;
+      }
+      .center-text{
+        text-align:center;
+      }
+
+      .about{
+        padding:0px 20px 15px 20px;
+      }
+
+      .blue{
+        color:blue;
+      }
+
+      .insights{
+        padding:20px 20px 15px 20px;
+      }
+
+      .bookmark{
+        padding:10px 20px 10px 20px;
       }
 
     </style>
@@ -376,7 +420,36 @@
 
     <!-- Structuring the Main Page -->
     <div class="main">
-      <div class="left">left</div>
+      <div class="left">
+        <div class="linkedin-right-box">
+          <img class="banner" src="./linkedin-banner.png"/>
+          <img class="banner-profile-img" src="./user.jpeg"/>
+          <div class="about">
+            <div class="right-heading center-text">Aayushi Mittal</div>
+            <div class="faded-text center-text">GSsoc'21 | MLSA'21 | Session Moderator at Education Outreach program | Mentee at GCI</div>
+          </div>
+          <div class="posts-hr"></div>
+          <div class="insights">
+          <table>
+            <tr>
+              <td class="faded-text">Who viewed your profile</td><td class=" faded-text blue">528</td>
+            </tr>
+            <tr>
+              <td class="faded-text">Views of your post</td><td class=" faded-text blue">2,457</td>
+            </tr>
+          </table>
+          </div>
+          <div class="posts-hr"></div>
+          <div class="insights">
+            <div class="faded-text">Access exclusive tools & insights</div>
+            <div class="post-creator">Try Premium For Free</div>
+          </div>
+          <div class="posts-hr"></div>
+          <div class="bookmark">
+            <span class="material-icons mr-10"> bookmark </span><span class="post-creator"> My Items</span>
+          </div>
+        </div>
+      </div>
       <div class="center">
         <!-- Create Post -->
         <div class="create-posts">
@@ -405,8 +478,8 @@
             </button>
           </div>
         </div>
-        <!-- LinkedIn Feed Post -->
         <div class="posts-hr"></div>
+        <!-- LinkedIn Feed Post -->
         <div class="post">
             <div class="post-info">
               <img class="feed-post-image" src="./masailogo.jpeg" />
@@ -458,7 +531,7 @@
           </div>
       </div>
       <div class="right">
-        <div class="linkedin-news">
+        <div class="linkedin-box">
           <div class="right-heading">LinkedIn News</div>
           <ul class="news-list">
             <li>
@@ -482,9 +555,9 @@
                 <div class="faded-text">10d ago • 1,403,209 readers</div>
             </li>
           </ul>
-          <div class="show-more">Show more </div>
+          <div class="show-more">Show more <span class="material-icons">expand_more</span></div>
         </div>
-        <div class="linkedin-news">
+        <div class="linkedin-box">
           <div class="right-heading">Today's Top Courses</div>
           <ol class="news-list">
             <li>
@@ -500,7 +573,7 @@
                 <div class="faded-text">Stacey Gordon</div>
             </li>
           </ol>
-          <div class="show-more">Show more on LinkedIn Learning</div>
+          <div class="show-more">Show more on LinkedIn Learning<span class="material-icons">expand_more</span></div>
         </div>
       </div>
     </div>
